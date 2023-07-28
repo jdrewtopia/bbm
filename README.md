@@ -1,13 +1,23 @@
-# BBM Development Environement
+# BBM Development Environment
+
+## Github Clone
+1. In parent directory, clone from git repository at [BBM Repo](https://github.com/jdrewtopia/bbm.git)
+```console
+git clone https://github.com/jdrewtopia/bbm.git
+```
+ **Note** Folder structure will be {parent directory}/bbm
+
+2. In terminal, navigate into bbm directory  
+```console
+cd bbm
+```
 
 ## Installation
-
-1. Pull from git repository at [BBM Repo](https://github.com/jdrewtopia/bbm.git)
-2. Install dependencies
+1. Install dependencies
 ```console
 npm install
 ```
-3. Run application in development mode
+2. Run application in development mode
 ```console
 npm run dev
 ```
