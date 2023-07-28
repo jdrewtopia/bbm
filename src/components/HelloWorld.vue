@@ -6,19 +6,10 @@ defineProps({
 })
 
 const count = ref(0)
-
-const serverHello = ref({})
-
-fetch(`/api/v1/hello`)
-  .then((r) => r.json())
-  .then(({ message }) => {
-    serverHello.value = message
-  })
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-  <h2>{{ serverHello }}</h2>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
