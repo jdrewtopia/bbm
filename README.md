@@ -21,6 +21,8 @@ npm install
 ```console
 npm run dev
 ```
+3. Access app at http://127.0.0.1:3000
+
 
 ## Build and Run app for Production
 1. Set environment to production
@@ -32,6 +34,8 @@ set NODE_ENV=production
 npm run build
 npm start
 ```
+3. Access app at http://127.0.0.1:3000
+
 **Note** To return to development reset the environment using:
 ```console
 set NODE_ENV=development
