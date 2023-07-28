@@ -1,7 +1,30 @@
-# Vue 3 + Vite
+# BBM Development Environement
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Installation
 
-## Recommended IDE Setup
+1. Pull from git repository at [BBM Repo](https://github.com/jdrewtopia/bbm.git)
+2. Install dependencies
+```console
+npm install
+```
+3. Run application in development mode
+```console
+npm run dev
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Build and Run app for Production
+1. Set environment to production
+```console
+set NODE_ENV=production
+```
+2. Build then run the app for production
+```console
+npm run build
+npm start
+```
+**Note** To return to development reset the environment using:
+```console
+set NODE_ENV=development
+```
+ 
+

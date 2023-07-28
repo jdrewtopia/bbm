@@ -10,7 +10,7 @@ const distPath = path.join(path.resolve(), "dist");
 const app = express();
 
 app.get("/api/v1/hello", (_req, res) => {
-    res.json({ message: "Hello, world!" });
+    res.json({ message: "Welcome to BBM!" });
 });
 
 if (process.env.NODE_ENV === "production") {

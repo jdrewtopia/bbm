@@ -1,15 +1,24 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
 defineProps({
   msg: String,
-})
+});
 
-const count = ref(0)
+const count = ref(0);
+
+const serverHello = ref({});
+
+fetch(`/api/v1/hello`)
+    .then((r) => r.json())
+    .then(({ message }) => {
+      serverHello.value = message;
+    });
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
+  <h2>{{ serverHello }}</h2>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
@@ -20,14 +29,11 @@ const count = ref(0)
   </div>
 
   <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
+    For Benson, Breana, Christiana, John
   </p>
   <p>
     Install
-    <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
+    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
     in your IDE for a better DX
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
